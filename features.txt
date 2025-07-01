@@ -1,0 +1,89 @@
+Photons:
+
+
+Electrons:
+Object property		|	Type	   |    Description
+-------------------------------------------------------------------------------------
+Electron_charge			Int_t		electric charge
+Electron_cutBased		UChar_t		cut-based ID RunIII Winter22 (0:fail, 1:veto, 2:loose, 3:medium, 4:tight)
+Electron_cutBased_HEEP		Bool_t		cut-based HEEP ID
+Electron_dr03TkSumPt		Float_t		Non-PF track isolation within a delta R cone of 0.3 with electron pt > 35 GeV
+Electron_dr03TkSumPtHEEP	Float_t		Non-PF track isolation within a delta R cone of 0.3 with electron pt > 35 GeV used in HEEP ID
+Electron_eta			Float_t		eta
+Electron_mass			Float_t		mass
+Electron_mvaIso			Float_t		MVA Iso ID score, Winter22V1
+Electron_mvaIso_WP80		Bool_t		MVA Iso ID WP80, Winter22V1
+Electron_mvaIso_WP90		Bool_t		MVA Iso ID WP90, Winter22V1
+Electron_pfRelIso03_all		Float_t		PF relative isolation dR=0.3, total (with rho*EA PU Winter22V1 corrections)
+Electron_pfRelIso03_chg		Float_t		PF relative isolation dR=0.3, charged component
+Electron_phi			Float_t		phi
+Electron_pt			Float_t		pt
+Electron_r9			Float_t		R9 of the supercluster, calculated with full 5x5 region
+nElectron			Int_t		slimmedElectrons after basic selection (pt > 5 )
+
+
+Muon:
+Object property         |       Type       |    Description
+-----------------------------------------------------------------------------------
+Muon_charge                     Int_t           electric charge
+Muon_eta 		        Float_t		eta
+Muon_isGlobal			Bool_t		muon is global muon
+Muon_mass			Float_t		mass
+Muon_mvaMuID			Float_t		MVA-based ID score
+Muon_pfRelIso03_all		Float_t		PF relative isolation dR=0.3, total (deltaBeta corrections)
+Muon_pfRelIso03_chg		Float_t		PF relative isolation dR=0.3, charged component
+Muon_phi			Float_t		phi
+Muon_pt				Float_t		pt
+nMuon				Int_t		slimmedMuons after basic selection 
+						(pt > 15 || (pt > 3 && (passed('CutBasedIdLoose') || 
+						passed('SoftCutBasedId') || passed('SoftMvaId') || 
+						passed('CutBasedIdGlobalHighPt') || 
+						passed('CutBasedIdTrkHighPt'))))
+
+Jet:
+Object property         |       Type       |    Description
+---------------------------------------------------------------------------------
+Jet_btagDeepFlavB		Float_t		DeepJet b+bb+lepb tag discriminator
+Jet_btagPNetB			Float_t		ParticleNet b vs. udscg
+Jet_eta				Float_t		eta
+Jet_jetId			UChar_t		Jet ID flag: bit2 is tight, bit3 is tightLepVeto
+Jet_mass			Float_t		mass
+Jet_phi				Float_t		phi
+Jet_pt				Float_t		pt
+nJet				Int_t		slimmedJetsPuppi, i.e. ak4 PFJets Puppi with JECs applied, after basic selection (pt > 15)
+
+
+PuppiMET
+Object property         |       Type       |    Description                          
+--------------------------------------------------------------------------------
+PuppiMET_phi			Float_t		phi
+PuppiMET_phiJERDown		Float_t		JER down phi
+PuppiMET_phiJERUp		Float_t		JER up phi
+PuppiMET_phiJESDown		Float_t		JES down phi
+PuppiMET_phiJESUp		Float_t		JES up phi
+PuppiMET_phiUnclusteredDown	Float_t		Unclustered down phi
+PuppiMET_phiUnclusteredUp	Float_t		Unclustered up phi
+PuppiMET_pt			Float_t		pt
+PuppiMET_ptJERDown		Float_t		JER down pt
+PuppiMET_ptJERUp		Float_t		JER up pt
+PuppiMET_ptJESDown		Float_t		JES down pt
+PuppiMET_ptJESUp		Float_t		JES up pt
+PuppiMET_ptUnclusteredDown	Float_t		Unclustered down pt
+PuppiMET_ptUnclusteredUp	Float_t		Unclustered up pt
+PuppiMET_sumEt			Float_t		scalar sum of Et
+
+RawMET
+Object property         |       Type       |    Description                          
+--------------------------------------------------------------------------------
+RawMET_phi			Float_t		phi
+RawMET_pt			Float_t		pt
+RawMET_sumEt			Float_t		scalar sum of Et
+
+RawPuppiMET
+Object property         |       Type       |    Description                          
+------------------------------------------------------------------------------
+RawPuppiMET_phi			Float_t		phi
+RawPuppiMET_pt			Float_t		pt
+RawPuppiMET_sumEt		Float_t		scalar sum of Et
+
+
