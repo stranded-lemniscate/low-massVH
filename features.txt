@@ -28,7 +28,10 @@ Object property         |       Type       |    Description
 Muon_charge                     Int_t           electric charge
 Muon_eta 		        Float_t		eta
 Muon_isGlobal			Bool_t		muon is global muon
+Muon_isPFcand			Bool_t		muon is PF candidate
 Muon_mass			Float_t		mass
+Muon_mediumId			Bool_t		cut-based ID, medium WP
+Muon_mediumPromptId		Bool_t		cut-based ID, medium prompt WP
 Muon_mvaMuID			Float_t		MVA-based ID score
 Muon_pfRelIso03_all		Float_t		PF relative isolation dR=0.3, total (deltaBeta corrections)
 Muon_pfRelIso03_chg		Float_t		PF relative isolation dR=0.3, charged component
