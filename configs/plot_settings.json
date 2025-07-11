@@ -1,0 +1,21 @@
+{
+  "variables": [
+    {
+      "name": "mass",
+      "xlabel": "mass (GeV)",
+      "ylabel": "Events per bin",
+      "hist_range": [50, 125],
+      "n_bins": 80,
+      "normalise_mc_to_data": false,
+      "mc_norm": 1000,
+      "plot_range": [50, 125]
+    }
+  ],
+  "plot_settings": {
+    "legend": true,
+    "ylim_bottom": 0,
+    "cms_label": "Private work",
+    "cms_year": 2025,
+    "cms_com": "13.6"
+  }
+}

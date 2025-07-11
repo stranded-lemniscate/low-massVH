@@ -1,0 +1,29 @@
+{
+    "samplejson": "signal.json",
+    "workflow": "lowmassVH",
+    "metaconditions": "Era2022_v1",
+    "taggers": [],
+    "year": {
+        "vh_M-70_postEE": ["2022postEE"],
+        "vbf_M-70_postEE": ["2022postEE"],
+        "ttHtoGG_M-70_postEE": ["2022postEE"],
+        "GluGluHtoGG_M-70_postEE": ["2022postEE"],
+        
+        "DiPhoton2Jets_postEE":["2022postEE"],
+        "DYJetstoLL_M-50_postEE":["2022postEE"],
+        "DYto2L-2Jets_MLL-50_postEE":["2022postEE"],
+        "qcd_PT-30to40_postEE": ["2022postEE"],
+        "GJet_PT-40_postEE": ["2022postEE"],
+        "WGto2QG_postEE": ["2022postEE"],
+        "ZG2JtoG2L2J_postEE": ["2022postEE"],
+        "WW_postEE":["2022postEE"],
+        "WZ_postEE":["2022postEE"],
+        "ZZ_postEE":["2022postEE"]
+    },
+    "corrections": {
+            
+    },
+    "systematics": {
+       
+    }
+}

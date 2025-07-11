@@ -1,0 +1,3 @@
+[submodule "HiggsDNA"]
+	path = HiggsDNA
+	url = git@github.com:stranded-lemniscate/HiggsDNA.git
