@@ -1,13 +1,15 @@
 {
-    "samplejson": "signal.json",
+    "samplejson": "signal_bkg.json",
     "workflow": "lowmassVH",
     "metaconditions": "Era2022_v1",
     "taggers": [],
     "year": {
-        "vh_M-70_postEE": ["2022postEE"],
-        "vbf_M-70_postEE": ["2022postEE"],
-        "ttHtoGG_M-70_postEE": ["2022postEE"],
-        "GluGluHtoGG_M-70_postEE": ["2022postEE"],
+        "_vh_M-70_postEE": ["2022postEE"],
+        "_vbf_M-70_postEE": ["2022postEE"],
+        "tth_M-70_postEE": ["2022postEE"],
+        "_ggh_M-70_postEE": ["2022postEE"],
+        
+        "_EGamma_data": ["2022postEE"],
         
         "DiPhoton2Jets_postEE":["2022postEE"],
         "DYJetstoLL_M-50_postEE":["2022postEE"],
@@ -21,9 +23,19 @@
         "ZZ_postEE":["2022postEE"]
     },
     "corrections": {
-            
+        "ggh_M-70_postEE": ["Smearing_IJazZ", "Material", "FNUF","Pileup","ElectronVetoSF", "TriggerSF", "PreselSF"],
+        "vbf_M-70_postEE": ["Smearing_IJazZ", "Material", "FNUF","Pileup", "SF_Photon_ID","ElectronVetoSF", "TriggerSF", "PreselSF"],
+        "vh_M-70_postEE": ["Smearing_IJazZ", "Material","FNUF","Pileup","SF_Photon_ID","ElectronVetoSF", "TriggerSF", "PreselSF"],
+        "tth_M-70_postEE": ["Smearing_IJazZ", "Material","FNUF","Pileup","ElectronVetoSF", "TriggerSF", "PreselSF"],
+        
+        "EGamma_data": []
     },
     "systematics": {
-       
+        "ggh_M-70_postEE": ["Smearing_IJazZ", "Material", "FNUF","Pileup","ElectronVetoSF", "TriggerSF", "PreselSF", "ScaleEB_Trad", "ScaleEE_Trad"],
+        "vbf_M-70_postEE": ["Smearing_IJazZ", "Material", "FNUF","Pileup", "SF_Photon_ID","ElectronVetoSF", "TriggerSF", "PreselSF", "ScaleEB_Trad", "ScaleEE_Trad"],
+        "vh_M-70_postEE": ["Smearing_IJazZ", "Material","FNUF","Pileup","SF_Photon_ID","ElectronVetoSF", "TriggerSF", "PreselSF", "ScaleEB_Trad", "ScaleEE_Trad"],
+        "tth_M-70_postEE": ["Smearing_IJazZ", "Material","FNUF","Pileup","ElectronVetoSF", "TriggerSF", "PreselSF", "ScaleEB_Trad", "ScaleEE_Trad"],
+        
+        "EGamma_data": []
     }
 }
